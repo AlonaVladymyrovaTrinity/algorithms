@@ -1,3 +1,4 @@
+//Session 4 Hashmaps
 // Given a string, write a function that counts the number of appearances of each letter in the string. The function should print out each letter and its number of appearances, it does not return anything.
 // Keep in mind that it should have a good function and variable names, good indentation and comments (if needed), and please also send me the Big-O, your edge cases and 1-2 examples, and any clarifying questions you would ask your interviewer. 
 // Example:

@@ -1,3 +1,4 @@
+//Session 5 Challenge unique chars in string
 //Implement an algorithm to determine if a string has all unique characters.
 //O(N^2)
 const hasUniqChar = (str) => {
