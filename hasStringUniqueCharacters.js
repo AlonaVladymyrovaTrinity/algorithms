@@ -66,22 +66,23 @@ const hasUnicCharHashMap = (arr) => {
 // console.log(hasUnicCharHashMap()); // ???
 
 // O(NlogN)
-const hasUnicCharSortFirst = (arr) => {
-  const sortedArr = arr.sort();
-  for (let i = 0; i < sortedArr.length; i++) {
-    if (sortedArr[i] === sortedArr[i + 1]) {
+function hasUniqueCharsSorting(array) {
+  const sortedArr = array.sort();
+  for (let i = 0; i < sortedArr.length - 1; i++) {
+    if (sortedArr[i].toLowerCase() === sortedArr[i + 1].toLowerCase()) {
       return false;
     }
   }
   return true;
-};
+}
+console.log(hasUniqueCharsSorting(["a","b","b","c","d","e","e"]));
 
-// console.log(hasUnicCharSortFirst(['a', 'b', 'b', 'c', 'd', 'e', 'e'])); // false
-// console.log(hasUnicCharSortFirst(['a', 'b', 'c'])); // true
-// console.log(hasUnicCharSortFirst("")); // ???
-// console.log(hasUnicCharSortFirst("$#&=")); // ???
-// console.log(hasUnicCharSortFirst(00998)); // ???
-// console.log(hasUnicCharSortFirst()); // ???
+// console.log(hasUniqueCharsSorting(['a', 'b', 'b', 'c', 'd', 'e', 'e'])); // false
+// console.log(hasUniqueCharsSorting(['a', 'b', 'c'])); // true
+// console.log(hasUniqueCharsSorting("")); // ???
+// console.log(hasUniqueCharsSorting("$#&=")); // ???
+// console.log(hasUniqueCharsSorting(00998)); // ???
+// console.log(hasUniqueCharsSorting()); // ???
 
 //----------------------------
 //Edge case:
